@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<!-- build:css -->
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+    <!-- endbuild -->
+	<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery.history.js"></script>
+	<title>组件库</title>
+</head>
+<body>
+	
+	<!-- 内容区 -->
+	<section class="container-fluid my-container">
+		<!-- 导航 -->
+		@@include('./views/Header.html')
+		<section class="col-lg-10 col-md-10 col-sm-9 my-section">
+			@@include('./views/Forms.html')
+			@@include('./views/Buttons.html')
+			@@include('./views/Tables.html')
+			@@include('./views/Navs.html')
+			@@include('./views/Pages.html')
+			@@include('./views/Ancillaries.html')
+		</section>
+	</section>
+	<!-- 复制代码弹窗 -->
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="alert alert-success" id="myModalLabel" role="alert" style="margin: 0"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 样式修改确认弹窗 -->
+	<div class="modal fade" id="my-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<div class="alert alert-danger" role="alert" style="margin: 0">退出后将复位样式，请确认是否关闭样式修改！</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">取 消</button>
+	        <button type="button" class="btn btn-primary my-change-sure">确 认</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- 复制代码 -->
+	<textarea cols="20" rows="1" class="my-text"></textarea>
+	<!-- 修改样式 -->
+	<style id="my-control"></style>
+</body>
+	<!-- build:js -->
+	<script type="text/javascript" src="./js/build.js"></script>
+    <!-- endbuild -->
+</html>

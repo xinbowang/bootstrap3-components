@@ -1,0 +1,139 @@
+$hoverColor: #337ab7;
+$brown: #aa6708;
+$thColor: #e91e63;
+$color: #666;
+/*--------*/
+.my-stacked>li.active>a,
+.my-stacked>li.active>a:focus, 
+.my-stacked>li.active>a:hover,
+.my-stacked>li>a,
+.my-stacked>li>a:focus, 
+.my-stacked>li>a:hover{
+	background: none;
+	text-align: center;
+}
+.my-stacked>li>a:hover{
+	color: #fff;
+}
+.my-container{
+	padding: 0;
+	.my-navbar{
+		margin: 0;
+		border-radius: 0;
+		.my-header{
+			float: none;
+		}
+	}
+	.my-section{
+		.content{
+			display: none;
+			.my-code-check{
+				padding-bottom: 25px;
+			}
+			.my-h3{
+				font-weight: 500;
+				border-left: 5px solid $thColor;
+				padding: 12px 0 10px 15px;
+				margin-top: 20px;
+				color: #333;
+			}
+			.my-h4{
+				padding: 20px 0 15px;
+				font-weight: 700;
+				small{
+					cursor: pointer;
+					margin-right: 16px;
+					&:hover{
+						color: $hoverColor;
+					}
+				}
+			}
+			.my-info{
+				padding-bottom: 10px;
+				padding-left: 15px;
+			}
+			.my-change-style{
+				position: relative;
+				padding-bottom: 15px;
+				display: none;
+				.my-change-run{
+					position: absolute;
+					right: 30px;
+					top: 10px;
+					color: $color;
+					small{
+						cursor: pointer;
+						float: right;
+						margin-left: 10px;
+						&:hover{
+							color: $hoverColor;
+						}
+					}
+					
+				}
+				textarea{
+					resize: vertical;
+				}
+			}
+			.my-code{
+				position: relative;
+				display: none;
+				.my-clone{
+					position: absolute;
+					right: 15px;
+					top: 15px;
+					cursor: pointer;
+					color: $color;
+					&:hover{
+						color: $hoverColor;
+					}
+				}
+			}
+			.my-html{
+				.rows{
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+.my-text{
+	position: fixed;
+	left: -100%;
+	top: 0;
+}
+.my-warning{
+	border-left: 5px solid $brown;
+	padding: 10px 15px;
+	background: #f8f8f8;
+	margin-bottom: 15px;
+}
+@media (min-width: 768px){
+	html, body{
+		height: 100%;
+		overflow: hidden;
+	}
+	.navbar>.container-fluid .my-index{
+		float: none; 
+		margin-left: 0; 
+		display: block; 
+		text-align: center;
+	}
+	.my-container{
+		height: 100%;
+		.my-navbar{
+			height: 100%;
+			.my-header{
+			}
+		}
+		.my-section{
+			height: 100%;
+			padding-right: 0;
+			.content{
+				padding-right: 15px;
+				height: 100%;
+				overflow-y: auto;
+			}
+		}
+	}
+}

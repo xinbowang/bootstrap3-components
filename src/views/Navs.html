@@ -1,0 +1,141 @@
+<!-- Navs开始 -->
+<div class="content Navs">
+	<!-- 复制代码 -->
+	<div class="my-code-check">
+		<h4 class="my-h4 text-primary">导航 —— <标签页>&nbsp;&nbsp;<small class="my-check pull-right">查看代码</small><!-- <small class="my-change pull-right">自定义样式</small> --></h4>
+		<!-- <div class="my-change-style">
+			<p class="my-change-run">
+				<small class="my-run-code">运行代码</small>
+				<small class="my-back-code">复位样式</small>
+			</p>
+			<textarea class="form-control" rows="11"></textarea>
+		</div> -->
+		<p class="my-info">注意 <b class="text-danger">.nav-tabs</b> 类依赖 <b class="text-danger">.nav</b> 基类。</p>
+		<div class="my-warning"><h4 class="text-danger">确保导航组件的可访问性</h4>如果你在使用导航组件实现导航条功能，务必在 <b class="text-danger">&lt;ul&gt;</b>的最外侧的逻辑父元素上添加 <b class="text-danger">role="navigation"</b> 属性，或者用一个 <b class="text-danger">&lt;nav&gt;</b> 元素包裹整个导航组件。不要将 <b class="text-danger">role</b> 属性添加到 <b class="text-danger">&lt;ul&gt;</b> 上，因为这样可以被辅助设备（残疾人用的）上被识别为一个真正的列表。
+		</div>
+		<div class="my-base">
+			<div class="my-code">
+				<small class="my-clone">复制代码</small>
+				<pre class="my-pre"></pre>
+			</div>
+			<div class="my-html">
+				<div role="navigation">
+					<ul class="nav nav-tabs">
+						<li role="presentation" class="active"><a href="javascript:;">Home</a></li>
+						<li role="presentation"><a href="javascript:;">Profile</a></li>
+						<li role="presentation"><a href="javascript:;">Messages</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="my-code-check">
+		<h4 class="my-h4 text-primary">胶囊式标签页&nbsp;&nbsp;<small class="my-check pull-right">查看代码</small></h4>
+		<p class="my-info">使用 <b class="text-danger">.nav-pills</b> 类</p>
+		<p class="my-info">胶囊是标签页也是可以垂直方向堆叠排列的。只需添加 <b class="text-danger">.nav-stacked</b> 类。</p>
+		<div class="my-base">
+			<div class="my-code">
+				<small class="my-clone">复制代码</small>
+				<pre class="my-pre"></pre>
+			</div>
+			<div class="my-html">
+				<div role="navigation">
+					<ul class="nav nav-pills">
+						<li role="presentation" class="active"><a href="javascript:;">Home</a></li>
+						<li role="presentation"><a href="javascript:;">Profile</a></li>
+						<li role="presentation"><a href="javascript:;">Messages</a></li>
+					</ul><br/>
+					<!--垂直方向堆叠排列 nav-stacked-->
+					<ul class="nav nav-pills nav-stacked">
+						<li role="presentation" class="active"><a href="javascript:;">Home</a></li>
+						<li role="presentation"><a href="javascript:;">Profile</a></li>
+						<li role="presentation"><a href="javascript:;">Messages</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="my-code-check">
+		<h4 class="my-h4 text-primary">导航条——默认样式的导航条&nbsp;&nbsp;<small class="my-check pull-right">查看代码</small></h4>
+		<p class="my-info">导航条是在您的应用或网站中作为导航页头的响应式基础组件。它们在移动设备上可以折叠（并且可开可关），且在视口（viewport）宽度增加时逐渐变为水平展开模式。<br/>通过 <b class="text-danger">.navbar</b> 给添加 <b class="text-danger">.navbar-inverse</b> 类可以改变导航条的外观。</p>
+		<div class="my-base">
+			<div class="my-code">
+				<small class="my-clone">复制代码</small>
+				<pre class="my-pre"></pre>
+			</div>
+			<div class="my-html">
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="javascript:;">Brand</a>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="javascript:;">Link <span class="sr-only">(current)</span></a></li>
+				        <li><a href="javascript:;">Link</a></li>
+				        <li class="dropdown">
+				          <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="javascript:;">Action</a></li>
+				            <li><a href="javascript:;">Another action</a></li>
+				            <li><a href="javascript:;">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="javascript:;">Separated link</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="javascript:;">One more separated link</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				      <form class="navbar-form navbar-left">
+				        <div class="form-group">
+				          <input type="text" class="form-control" placeholder="Search">
+				        </div>
+				        <button type="submit" class="btn btn-default">Submit</button>
+				      </form>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="javascript:;">Link</a></li>
+				        <li class="dropdown">
+				          <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="javascript:;">Action</a></li>
+				            <li><a href="javascript:;">Another action</a></li>
+				            <li><a href="javascript:;">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="javascript:;">Separated link</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="my-code-check">
+		<h4 class="my-h4 text-primary">路径导航&nbsp;&nbsp;<small class="my-check pull-right">查看代码</small></h4>
+		<p class="my-info">各路径间的分隔符已经自动通过 CSS 的 <b class="text-danger">:before</b> 和 <b class="text-danger">content</b> 属性添加了。</p>
+		<div class="my-base">
+			<div class="my-code">
+				<small class="my-clone">复制代码</small>
+				<pre class="my-pre"></pre>
+			</div>
+			<div class="my-html">
+				<ol class="breadcrumb">
+					<li><a href="javascript:;">Home</a></li>
+					<li><a href="javascript:;">Library</a></li>
+					<li class="active">Data</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Navs结束-->
