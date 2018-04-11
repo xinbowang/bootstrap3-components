@@ -1,7 +1,4 @@
-# gulp配置
-###### 新增postcss配置:http://www.w3cplus.com/PostCSS/postcss-deep-dive-shortcuts-and-shorthand.html 相关插件
-### 包括开发环境及生产环境配置需要
-
+# bootstrap3 组件拆分
 **介绍**
 1. 配置了css、sass编译 -> 生产环境下配置了合并压缩 -> 生成build.min.css
 2. 配置了jslint/es2015进行js检查与编译es6 -> 生成统一的js： build.js -> 生产环境将其进行了压缩生成 -> build.min.js
