@@ -1,9 +1,5 @@
 # bootstrap3 组件拆分
-**介绍**
-1. 配置了css、sass编译 -> 生产环境下配置了合并压缩 -> 生成build.min.css
-2. 配置了jslint/es2015进行js检查与编译es6 -> 生成统一的js： build.js -> 生产环境将其进行了压缩生成 -> build.min.js
-3. 配置了图片压缩及base64图片转码
-4. 配置了版本号，防止缓存：*仅限生产环境配置
+
 ## *使用说明
  由于添加了版本号信息，所以需要先手动更改依赖版本号文件：gulp-rev和gulp-rev-collector(重要)
  ``` javascript
